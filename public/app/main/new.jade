@@ -1,0 +1,7 @@
+.panel.panel-primary
+    .panel-heading New Courses
+    .panel-body
+        .row(ng-repeat="course in courses | filter:{new:true}")
+            .col-md-12
+                {{course.name}}
+    
